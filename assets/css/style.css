@@ -18,6 +18,14 @@
     background-color: #fff;
 }
 
+.bg-color-conferences {
+    background-color: #f4f4f4;
+}
+
+.bg-color-groups {
+    background-color: #ffffff;
+}
+
 .bg-color-three-reasons {
     background-color: #fff;
 }
@@ -36,6 +44,14 @@
 
 .ui-menu-color-download {
     background-color: #525252;
+}
+
+.ui-menu-color-github {
+    background-color: #1c4a6c;
+}
+
+.ui-menu-color-interests {
+    background-color: #e74c3c;
 }
 
 /* ------------------------- Special paddings/margins/text */
@@ -373,6 +389,12 @@ button[type="submit"] {
 /* -------------------------------------- Media Queries */
 
 @media(min-width: 950px) {
+    .section-column {
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
+    }
+
     .center-form {
         padding-top: 30px;
         min-height: 240px;
