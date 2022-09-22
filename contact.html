@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rosie</title>
     <!-- CSS Bootstrap -->
     <link
       rel="stylesheet"
@@ -29,6 +28,19 @@
     />
     <!-- CSS style-->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- EmailJs script -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("ADnZrUjJUaA2vPaIp");
+      })();
+    </script>
+    <!--./ emailjs script -->
+    <title>Rosie</title>
   </head>
   <body>
     <!-- Header -->
@@ -105,7 +117,7 @@
           <h5 class="uppercase text-center">Let's work together!</h5>
 
           <div class="center-form">
-            <form>
+            <form onsubmit="return sendMail(this)">
               <input
                 type="text"
                 name="name"
@@ -116,7 +128,7 @@
               />
               <input
                 type="email"
-                name="email"
+                name="emailaddress"
                 id="emailaddress"
                 class="form-control"
                 placeholder="Email"
@@ -224,5 +236,6 @@
       crossorigin="anonymous"
     ></script>
     <!--./ bootstrap script-->
+    <script type="text/javascript" src="assets/js/sendEmail.js"></script>
   </body>
 </html>
